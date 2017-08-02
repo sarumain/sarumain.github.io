@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Brian Connor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="brianconnor.css" rel="stylesheet" id="bootstrap-css">
+
+    <style type="text/css">
+        .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        margin-top:-10px;
+        background-color: transparent;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+          <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><img src="http://i.imgur.com/K7ae9RF.png"></div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="brianconnor.html">Home</a></li>
+            <li><a href="https://soundcloud.com/brian-connor-2">Music</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="nightlife.html">Why Nightlife Can Be Good & Bad</a></li>
+                    <li><a href="stagefright.html">Challenging Stage Fright</a></li>
+                    <li><a href="pausing.html">How I Realized Pausing Is Necessary</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+               
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <script type="text/javascript">
+  </script>
+
+  <div class="blogpost">
+  <h1>Why Nightlife Can Be Good & Bad</h1>
+  <h2>Posted on <b>January 13, 2017</b></h2>
+
+  <p>This is something I've been thinking about lately but not really in any sphere of importance.<br/>
+
+A few of my friends like to go out, which isn't anything particularily out of the norm. But there's a lot of times, maybe even most of the time, where I don't want to go out. I just want to stay in, watch TV, maybe read a book. Don't get me wrong, I'm not that much of an introvert. But I don't like nightlife. Give me a brunch date or an afternoon hangout. Nights feel like they belong in a specific place where staying in seems better.
+      </p></div>
+</body>
+<footer>
+  <ul>
+    <li>  © Brian Connor</li>
+  </ul>
+  <br></br>
+  <img src="http://i.imgur.com/K7ae9RF.png" alt="footerlogo">
+  <br></br>
+</footer>
+</html>

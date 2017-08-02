@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Responsive Navbar brand centered - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="brianconnor.css" rel="stylesheet" id="bootstrap-css">
+
+    <style type="text/css">
+        .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        margin-top:-10px;
+        background-color: transparent;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+          <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><img src="http://i.imgur.com/K7ae9RF.png"></div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="brianconnor.html">Home</a></li>
+            <li><a href="https://soundcloud.com/brian-connor-2">Music</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="nightlife.html">Why Nightlife Can Be Good & Bad</a></li>
+                    <li><a href="stagefright.html">Challenging Stage Fright</a></li>
+                    <li><a href="pausing.html">How I Realized Pausing Is Necessary</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+               
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <script type="text/javascript">
+  
+  </script>
+
+<div class = "media" style="padding:100px;">
+   <a class = "pull-left" href = "#">
+      <img class = "media-object" src = "http://i.imgur.com/uwgs7fv.png" alt = "Media Object">
+   </a>
+   
+   <div class = "media-body" style="padding:30px;">
+     <div class="intro" style="color:white; font-size:38px;font-weight: 700;">Name's Brian.</div>
+     <span style="color:cyan;font-weight: 400;">
+      I'm a 26-year-old musician in Austin, Texas. If I'm not attempting sick beats, I'm probably binging Mr. Robot or cooking with my family. Feel free to check out my Soundcloud for my newest tracks, or read one of my latest blogposts. If you need me for my music, or anything else, feel free to contact me.</span>
+   </div>
+  
+</div>
+
+  <div class="recent" style="text-align: center; background:rgb(73,36,128); padding:5px;width:10%; margin:0 auto; font-size:10px; border-radius: 5px;color:white">RECENT THOUGHTS</div>
+<div class="containercards">
+  <ul>
+  <li>
+    <div><img src="http://i.imgur.com/kAVeB2C.png" alt="" /></div>
+    <h1>Why Nightlife Can Be Good & Bad</h1>
+    <p>Talkin' about night life.</p>
+    <a href="nightlife.html">View more</a>
+  </li>
+  <li>
+    <div><img src="http://i.imgur.com/U0rSwQ0.jpg" alt="" /></div>
+    <h1>Challenging Stage Fright</h1>
+    <p>One step at a time.</p>
+    <a href="stagefright.html">View more</a>
+  </li>
+  <li>
+    <div><img src="http://i.imgur.com/b2M07Ci.png" alt="" /></div>
+    <h1>How I Realized Pausing Is Necessary</h1>
+    <p>Remote controls are my inspiration.</p>
+    <a href="pausing.html">View more</a>
+  </li>
+</ul>
+</div>
+</body>
+
+<footer>
+  <ul>
+    <li>  © Brian Connor</li>
+  </ul>
+  <br></br>
+  <img src="http://i.imgur.com/K7ae9RF.png" alt="footerlogo">
+  <br></br>
+</footer>
+</html>

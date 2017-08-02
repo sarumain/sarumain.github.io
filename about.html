@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Brian Connor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="brianconnor.css" rel="stylesheet" id="bootstrap-css">
+
+    <style type="text/css">
+        .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        margin-top:-10px;
+        background-color: transparent;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+          <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><img src="http://i.imgur.com/K7ae9RF.png"></div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="brianconnor.html">Home</a></li>
+            <li><a href="https://soundcloud.com/brian-connor-2">Music</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="nightlife.html">Why Nightlife Can Be Good & Bad</a></li>
+                    <li><a href="stagefright.html">Challenging Stage Fright</a></li>
+                    <li><a href="pausing.html">How I Realized Pausing Is Necessary</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+               
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <script type="text/javascript">
+  </script>
+
+  <div class="rest">
+  <h1>About Me</h1>
+
+  <p>I'm a musician in Austin, Texas. 26-years-old.<br/>
+
+  That about sums it up but I also graduated in Communications from University of Texas in 2011. I learned shortly afterwards that music was my only purpose in life so I pursued it and the music scene in Austin is vibrant enough that here I am five years later playing music. I'm great with a guitar and a set of drums, having taken lessons since I was 15. My favorite band of all time is Rush, but I've got a soft spot for Radiohead.</p>
+
+  </div>
+</body>
+<footer>
+  <ul>
+    <li>  © Brian Connor</li>
+  </ul>
+  <br></br>
+  <img src="http://i.imgur.com/K7ae9RF.png" alt="footerlogo">
+  <br></br>
+</footer>
+</html>

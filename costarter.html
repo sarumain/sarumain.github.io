@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="costarter.js"></script>
+	<link rel="stylesheet" type="text/css" href="costarter.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</header>
+
+<body>
+	<div class="title">
+		<div class="logo"></div>
+		<div class="descr">Find movies and TV shows that co-star two actors.</div>
+	</div>
+
+	<div class="wrapper">
+		<p id="instruct"><b>Enter the actor names here</b></p>
+		<p id="example">e.g. Tom Cruise & Jeremy Renner</p><br/>
+
+		Actor 1: <input type="text" class="actor" id="0"></input><br/>
+		Actor 2: <input type="text" class="actor" id="1"></input><br/><br/>
+		<button id="add">Submit!</button>
+
+		<br/><img id="load" src="ripple.gif">
+	</div>
+
+	<div class="bottom">
+		<div class="results">
+			They're both in
+			<p></p>
+		</div>
+	</div>
+
+	<div class="credits">
+		API credit to <b>IMDB.com</b> and <b>http://www.theimdbapi.org</b>.
+	</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+.navbar-default {
+    background: url('http://i.imgur.com/TLeuPy9.png');
+    background-repeat:repeat-x;
+    border:none;
+    border-radius:0px;
+}
+
+body {
+    background:url('http://i.imgur.com/iVe06dy.png');
+    background-repeat: repeat-x;
+    background-color:rgb(153,85,255);
+}
+
+.navbar-nav>li>a {
+    font-family: 'Montserrat', sans-serif;
+    color:white!important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.containercards {
+  display: block;
+  height: 100%;
+  padding: 50px 0;
+
+}
+
+.containercards ul {
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+}
+.containercards ul li {
+  height: 450px;
+  width: 33.33333%;
+  background: white;
+  float: left;
+  display: inline;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  position: absolute;
+  text-align: center;
+  padding: 50px 30px;
+}
+.containercards ul li:nth-child(2) {
+  z-index: 10;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -25px;
+  height: 500px;
+  width: 35%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.containercards ul li:nth-child(3) {
+  right: 0;
+}
+.containercards ul div {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 2em;
+  background: #eee;
+  box-shadow: 0 0 0 4px #ddd;
+}
+
+.containercards h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: .6em;
+  color:rgb(77,38,134);
+}
+
+.containercards p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .8em;
+  margin-bottom: 2em;
+}
+
+.containercards img {
+  width: 100%;
+}
+
+.containercards a {
+  text-decoration: none;
+  color: rgb(61,69,146);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+.navbar-nav>li>a:hover {
+  color:cyan!important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background:none!important;
+}
+
+.blogpost {
+  text-align: center;
+  width: 75%;
+  background: url('http://i.imgur.com/wc5jfYm.png');
+  background-repeat: repeat-x;
+  background-color:white;
+  padding: 100px;
+  margin:0 auto;
+}
+
+.blogpost h2 {
+  font-size: 18px;
+  color: gray;
+}
+
+.blogpost p {
+  margin-top: 18px;
+  font-size:12px;
+  text-align: left!important;
+}
+
+@media (max-width: 500px) {
+  .containercards, .recent {
+    display:none;
+  }
+
+  .media-body span {
+    padding: 0px!important;
+    font-size: 10px;
+  }
+
+  .intro {
+    font-size:18px!important;
+  }
+
+  .blogpost,.rest {
+    padding: 10px;
+  }
+  .blogpost h1 {
+    font-size: 18px!important;
+  }
+
+
+}
+
+.rest {
+  color: white;
+  text-align: center;
+  width: 75%;
+  padding: 100px;
+  margin:0 auto;
+}
+
+.rest p {
+  color: cyan;
+}
+
+
+footer {
+  bottom: 0;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  background: rgb(68, 33, 123);
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(174, 178, 188);
+}
+
+footer ul {
+  display:inline-table;
+  color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer li {
+    float: left;
+    padding: 10px;
+    display:inline;
+}

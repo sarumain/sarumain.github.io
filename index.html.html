@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Sandeep Arumainayagam</title>
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<script src="jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="portfolio.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<style type="text/css">
+		.slide {
+		    text-align: center;
+		}
+		#actions{
+			position:fixed;
+			top: 73px;
+			left: 30px;
+			z-index: 99999;
+		}
+		#actions li{
+			background: rgba(0,0,0,0.8);
+			padding: 7px;
+			margin: 2px;
+			color: #ccc;
+			display: inline-block;
+			cursor: pointer;
+		}
+		#actions li:hover{
+			color: #fff;
+			background: #81A140;
+		}
+	</style>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myContainer').fullpage({
+			sectionsColor: ['white', '#rgb(250,193,122)', 'rgb(128,207,204)', 'rgb(255,172,140)', 'white'],
+			anchors: ['home', 'code', 'web', 'design', 'contact'],
+			menu: '#menu',
+			slidesNavigation: true,
+			slidesToSections: true,
+			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+				console.log("slideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+
+			},
+			onSlideLeave: function(anchorLink, index, slideIndex, direction){
+				console.log("----------------");
+				console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+			}
+		});
+
+		$('#toSections').click(function(){
+			$.fn.e.responsiveSlides.toSections();
+		});
+
+		$('#toSlides').click(function(){
+			$.fn.fullpage.responsiveSlides.toSlides();
+		});
+	});
+	</script>
+
+</head>
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#home">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#code">Code</a></li>
+	<li data-menuanchor="3rdPage"><a href="#web">Web</a></li>
+	<li data-menuanchor="4thpage"><a href="#design">Design</a></li>
+	<li data-menuanchor="5thpage"><a href="#contact">Contact</a></li>
+</ul>
+
+
+<div id="myContainer">
+
+	<div class="section">
+		<div class="content">
+				<h1>Hi, I'm Sandeep. I like to create.</h1>
+				<img src="homeimg.png" alt="hat">
+				<p>Based in Ontario, CA, I have experience with software development, web development and graphic design.</p>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="slide"><img src="tlvtv.png"><p>Developed and design a Hebrew language streaming website.</p><br/><p><a href="http://www.tlvtv.com/">View here</a></p></div>
+		<div class="slide"><img src="amazonreview.png"><p>Helped develop a program that finds the most accurate reviews on Amazon.</p><br/><p><a href="http://www.filedropper.com/truereview">Download the JAR</a></p></div>
+		<div class="slide"><img src="checkers.png"><p>Command line version of checkers.</p><br/><p><a href="http://www.filedropper.com/checkers">Download the JAR</a></p></div>
+	</div>
+
+	<div class="section">
+		<div class="slide"><img src="cannelis.png"><p><a href="cannelis/canneli.html">View here</a></p></div>
+		<div class="slide"><img src="brianconnor.png"><p><a href="brianconnor/brianconnor.html">View here</a></p></div>
+	</div>
+	<div class="section">
+		<div class="slide"><img src="cec.png"></div>
+		<div class="slide"><img src="ski.png"></div>
+		<div class="slide"><img src="frootjus.png"></div>
+		<div class="slide"><img src="brocpg1.png"></div>
+		<div class="slide"><img src="brocpg2.png"></div>
+		<div class="slide"><img src="dbw.png"></div>
+		<div class="slide"><img src="roger.png"></div>
+		<div class="slide"><img src="gazon.png"></div>
+	</div>
+	<div class="section"><div id="framecontainer"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRuVYoqvVrEd4EDEC27TT_zlBk3oigPbSItsvbK2hYORHoYg/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+	</div>
+
+</div>
+
+<input type="hidden" id="_4" value="3" />
+
+</body>
+</html>
