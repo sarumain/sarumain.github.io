@@ -1,4 +1,15 @@
-#menu li {
+@media only screen and (max-width: 744x) }
+  #home {
+    width: 50%;
+    height: auto;
+  }
+ .content {
+   font-size: 18px;
+    }
+}
+  
+  
+  #menu li {
 
   display:inline-block;
 
@@ -70,7 +81,7 @@
 
   font-family: 'Playfair Display', serif;
 
-  font-size: 18px;
+  font-size: 32px;
 
   margin: 0 auto;
 
@@ -130,9 +141,4 @@
 
   text-align: center;
 
-}
-
-#home {
-    width: 100%;
-    height: auto;
 }
