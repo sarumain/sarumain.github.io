@@ -1,11 +1,13 @@
-@media only screen and (min-width: 744x) {
-  #home {
-    width: 50%;
+@media screen and (max-width: 1000px) {
+  #mainimg {
+    width: 100%;
     height: auto;
   }
  .content {
-   font-size: 18px;
+  width: 50%!important;
+   font-size: 18px!important;
     }
+
 }
   
   
